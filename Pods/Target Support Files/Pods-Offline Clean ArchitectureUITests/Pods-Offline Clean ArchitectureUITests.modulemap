@@ -1,0 +1,6 @@
+framework module Pods_Offline_Clean_ArchitectureUITests {
+  umbrella header "Pods-Offline Clean ArchitectureUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
