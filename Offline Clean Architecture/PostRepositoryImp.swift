@@ -68,23 +68,14 @@ struct RealmPostRepositoryImp : PostRepositrory {
                 
                 let realm = try Realm()
                 let items = realm.objects(PostRealmObject.self)
-//                print("\n\n\n\n\n\n\n\n\n \(#function), \(#line) value: \(items.first)")
                 
 
-                var posts : [Post] = []
-                for item in items {
-                    let post = Post(id: item.id)
-                    posts.append(post)
-                }
-                print("\n\n\n\n\n\n\n\n\n \(#function), \(#line) value: \(posts.first?.id)")
+                let posts : [Post] = items.map({ (item) -> Post in
+                    let post = Post(userId: item.userId, id: item.id, title: item.title, body: item.body)
+                    return post
+                })
                 
-//                let posts : [Post] = items.map({ (item) -> Post in
-//                    
-//                    let post = Post(id: item.id)
-//                    
-//                    print("\n\n\n\n\n\n\n\n\n \(#function), \(#line) value: \(post.id!)")
-//                    return post
-//                })
+              
                 observer.onNext(posts)
                 observer.on(.completed)
             }catch (let error) {

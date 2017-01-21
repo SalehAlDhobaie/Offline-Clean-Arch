@@ -12,16 +12,17 @@ import RealmSwift
 
 public class PostRealmObject : Object {
     
-    public var id : Int = 0
-    public var userId : Int?
-    public var title: String?
-    public var body: String?
+    dynamic var id : Int = 0
+    dynamic var userId : Int = 0
+    dynamic var title: String = ""
+    dynamic var body: String = ""
     
     override public class func primaryKey() -> String? {
         return "id"
     }
     
 }
+
 
 
 public struct Post {
@@ -32,10 +33,6 @@ public struct Post {
     public var title: String?
     public var body: String?
     
-    
-    init(id: Int) {
-        self.id = id
-    }
     
 }
 
@@ -56,9 +53,9 @@ extension Post {
         
         let realmObject = PostRealmObject()
         realmObject.id = post.id!
-        realmObject.userId = post.userId
-        realmObject.title = post.title
-        realmObject.body = post.body
+        realmObject.userId = post.userId!
+        realmObject.title = post.title!
+        realmObject.body = post.body!
         
         return realmObject
     }
