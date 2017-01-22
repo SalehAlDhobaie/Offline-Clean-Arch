@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		346C74A8D74DF084EF48C2DE /* Pods_Offline_Clean_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBD9EEF1274577329321FE0 /* Pods_Offline_Clean_Architecture.framework */; };
+		37D7B0361E342CA300AA6CA3 /* RealmParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7B0351E342CA300AA6CA3 /* RealmParser.swift */; };
+		37D7B0381E3434D200AA6CA3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7B0371E3434D200AA6CA3 /* ErrorHandler.swift */; };
+		37D7B03A1E3436F600AA6CA3 /* PostRealmImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7B0391E3436F600AA6CA3 /* PostRealmImp.swift */; };
 		4CD4E2621E33774500937FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2611E33774500937FDF /* AppDelegate.swift */; };
 		4CD4E2641E33774500937FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2631E33774500937FDF /* ViewController.swift */; };
 		4CD4E2671E33774500937FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4E2651E33774500937FDF /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		120CA7DBD43BC907F917BAFA /* Pods_Offline_Clean_ArchitectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offline_Clean_ArchitectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D7B0351E342CA300AA6CA3 /* RealmParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmParser.swift; sourceTree = "<group>"; };
+		37D7B0371E3434D200AA6CA3 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		37D7B0391E3436F600AA6CA3 /* PostRealmImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRealmImp.swift; sourceTree = "<group>"; };
 		4CD4E25E1E33774500937FDF /* Offline Clean Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Offline Clean Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD4E2611E33774500937FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD4E2631E33774500937FDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +117,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		37D7B0341E342C7F00AA6CA3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				37D7B0351E342CA300AA6CA3 /* RealmParser.swift */,
+				37D7B0371E3434D200AA6CA3 /* ErrorHandler.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		4CD4E2551E33774500937FDF = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +151,7 @@
 		4CD4E2601E33774500937FDF /* Offline Clean Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				37D7B0341E342C7F00AA6CA3 /* Utility */,
 				4CD4E29B1E337D6F00937FDF /* Network */,
 				4CD4E2951E337C8D00937FDF /* Service */,
 				4CD4E2921E337BD900937FDF /* Data */,
@@ -173,6 +189,7 @@
 			children = (
 				4CD4E2901E337AC400937FDF /* Repositrory.swift */,
 				4CD4E2991E337CC300937FDF /* PostRepositoryImp.swift */,
+				37D7B0391E3436F600AA6CA3 /* PostRealmImp.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -505,8 +522,11 @@
 				4CD4E29D1E337D8700937FDF /* Network.swift in Sources */,
 				4CD4E29A1E337CC300937FDF /* PostRepositoryImp.swift in Sources */,
 				4CD4E2621E33774500937FDF /* AppDelegate.swift in Sources */,
+				37D7B0361E342CA300AA6CA3 /* RealmParser.swift in Sources */,
 				4CD4E2941E337BE600937FDF /* Model.swift in Sources */,
+				37D7B0381E3434D200AA6CA3 /* ErrorHandler.swift in Sources */,
 				4CD4E2981E337CA900937FDF /* PostServices.swift in Sources */,
+				37D7B03A1E3436F600AA6CA3 /* PostRealmImp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
