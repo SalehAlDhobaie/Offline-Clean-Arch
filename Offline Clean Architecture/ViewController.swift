@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         
     }
     @IBAction func testFetchPost(_ sender: Any) {
-        
         fetchPost()
     }
 

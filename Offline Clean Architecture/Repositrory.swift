@@ -18,13 +18,3 @@ public protocol PostRepositrory {
     
 }
 
-
-protocol CommentRepositrory {
-    
-    
-    // GET /posts
-    func allComments() -> Observable<[Comment]>
-    
-    
-}
-
