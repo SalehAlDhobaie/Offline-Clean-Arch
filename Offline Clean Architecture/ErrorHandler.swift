@@ -11,8 +11,12 @@ import Moya_ModelMapper
 import Moya
 
 
-struct ErrorHandler {
-    func handleError(error: Swift.Error) -> Swift.Error{
+enum ErrorHandler: Swift.Error {
+    
+    case none
+    
+    
+    static func handleError(error: Swift.Error) -> Swift.Error{
         if case MoyaError.underlying(let error) = error {
             print(error)
         }else if case MoyaError.jsonMapping(let e) = error {

@@ -20,6 +20,7 @@ struct RealmPostRepositoryImp : PostRepositrory {
                 
                 let realm = try Realm()
                 let items = realm.objects(Post.self)
+                
                 let posts : [Post] = items.map({ (item) -> Post in
                     return item
                 })

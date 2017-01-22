@@ -22,7 +22,7 @@ struct NetworkPostRepositoryImp : PostRepositrory {
                 return try RealmParser().writeObject(realmObject: mappingResult)
                 
             }catch (let error) {
-                throw ErrorHandler().handleError(error: error)
+                throw ErrorHandler.handleError(error: error)
             }
         })
     }
