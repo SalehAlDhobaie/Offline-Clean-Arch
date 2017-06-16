@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RXm-nW-XOJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Post View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Offline_Clean_Architecture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PostViewController" customModule="Offline_Clean_Architecture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,23 +21,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nr5-BK-yoi">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-XH-zxU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="testFetchPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MpE-7c-SZd"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7sL-bQ-k98"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bpr-KK-miP"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Nr5-BK-yoi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Xvj-dc-Fsy"/>
-                            <constraint firstItem="Nr5-BK-yoi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sXx-gA-JfL"/>
+                            <constraint firstItem="1I7-XH-zxU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mof-3C-uTb"/>
+                            <constraint firstAttribute="trailing" secondItem="1I7-XH-zxU" secondAttribute="trailing" id="SCf-W9-VhP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1I7-XH-zxU" secondAttribute="bottom" id="cPH-Z4-Fio"/>
+                            <constraint firstItem="1I7-XH-zxU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gqW-lC-neY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="BE9-dQ-r5m"/>
+                    <connections>
+                        <outlet property="tableView" destination="1I7-XH-zxU" id="QlY-6e-4Qy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="644" y="18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UK3-7K-8c3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RXm-nW-XOJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C9c-pB-p5u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4hQ-6w-p57"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oss-Pz-v86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130.40000000000001" y="17.541229385307346"/>
         </scene>
     </scenes>
 </document>

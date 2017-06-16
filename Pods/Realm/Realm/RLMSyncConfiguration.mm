@@ -91,6 +91,14 @@ static BOOL isValidRealmURL(NSURL *url) {
         && self.stopPolicy == that.stopPolicy;
 }
 
+- (void)setEnableSSLValidation:(BOOL)enableSSLValidation {
+    _config->client_validate_ssl = (bool)enableSSLValidation;
+}
+
+- (BOOL)enableSSLValidation {
+    return (BOOL)_config->client_validate_ssl;
+}
+
 - (realm::SyncConfig)rawConfiguration {
     return *_config;
 }
@@ -129,14 +137,12 @@ static BOOL isValidRealmURL(NSURL *url) {
         if (!isValidRealmURL(url)) {
             @throw RLMException(@"The provided URL (%@) was not a valid Realm URL.", [url absoluteString]);
         }
-        auto bindHandler = [=](const std::string& path,
-                              const SyncConfig& config,
-                              const std::shared_ptr<SyncSession>& session) {
-            [user _bindSessionWithPath:path
-                                config:config
-                               session:session
-                            completion:[RLMSyncManager sharedManager].sessionCompletionNotifier
-                          isStandalone:NO];
+        auto bindHandler = [=](auto&,
+                               const SyncConfig& config,
+                               const std::shared_ptr<SyncSession>& session) {
+            [user _bindSessionWithConfig:config
+                                 session:session
+                              completion:[RLMSyncManager sharedManager].sessionCompletionNotifier];
         };
         if (!errorHandler) {
             errorHandler = [=](std::shared_ptr<SyncSession> errored_session,
@@ -163,6 +169,9 @@ static BOOL isValidRealmURL(NSURL *url) {
             std::move(bindHandler),
             std::move(errorHandler)
         });
+        if (NSNumber *disabled = [[RLMSyncManager sharedManager] globalSSLValidationDisabled]) {
+            _config->client_validate_ssl = ![disabled boolValue];
+        }
         self.customFileURL = customFileURL;
         return self;
     }

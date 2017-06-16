@@ -10,20 +10,23 @@
 		346C74A8D74DF084EF48C2DE /* Pods_Offline_Clean_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBD9EEF1274577329321FE0 /* Pods_Offline_Clean_Architecture.framework */; };
 		37D7B0361E342CA300AA6CA3 /* RealmParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7B0351E342CA300AA6CA3 /* RealmParser.swift */; };
 		37D7B0381E3434D200AA6CA3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7B0371E3434D200AA6CA3 /* ErrorHandler.swift */; };
-		37D7B03A1E3436F600AA6CA3 /* PostRealmImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7B0391E3436F600AA6CA3 /* PostRealmImp.swift */; };
+		4C44BF3E1EF37821004B2C96 /* PostServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF3D1EF37821004B2C96 /* PostServices.swift */; };
+		4C44BF401EF3782B004B2C96 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF3F1EF3782B004B2C96 /* UseCase.swift */; };
+		4C44BF461EF37867004B2C96 /* RealmPostRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF431EF37867004B2C96 /* RealmPostRepositoryImp.swift */; };
+		4C44BF471EF37867004B2C96 /* Repositrory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF441EF37867004B2C96 /* Repositrory.swift */; };
+		4C44BF491EF3789D004B2C96 /* NetworkPostRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF481EF3789D004B2C96 /* NetworkPostRepositoryImp.swift */; };
+		4C44BF4C1EF378BB004B2C96 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF4B1EF378BB004B2C96 /* PostViewController.swift */; };
+		4C44BF4F1EF378DF004B2C96 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF4E1EF378DF004B2C96 /* PostPresenter.swift */; };
+		4C44BF531EF37E5A004B2C96 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C44BF511EF37E5A004B2C96 /* PostTableViewCell.swift */; };
+		4C44BF541EF37E5A004B2C96 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C44BF521EF37E5A004B2C96 /* PostTableViewCell.xib */; };
 		4CD4E2621E33774500937FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2611E33774500937FDF /* AppDelegate.swift */; };
-		4CD4E2641E33774500937FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2631E33774500937FDF /* ViewController.swift */; };
 		4CD4E2671E33774500937FDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4E2651E33774500937FDF /* Main.storyboard */; };
 		4CD4E2691E33774500937FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4E2681E33774500937FDF /* Assets.xcassets */; };
 		4CD4E26C1E33774500937FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4E26A1E33774500937FDF /* LaunchScreen.storyboard */; };
 		4CD4E2771E33774500937FDF /* Offline_Clean_ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2761E33774500937FDF /* Offline_Clean_ArchitectureTests.swift */; };
 		4CD4E2821E33774500937FDF /* Offline_Clean_ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2811E33774500937FDF /* Offline_Clean_ArchitectureUITests.swift */; };
-		4CD4E2911E337AC400937FDF /* Repositrory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2901E337AC400937FDF /* Repositrory.swift */; };
-		4CD4E2941E337BE600937FDF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2931E337BE600937FDF /* Model.swift */; };
-		4CD4E2981E337CA900937FDF /* PostServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2971E337CA900937FDF /* PostServices.swift */; };
-		4CD4E29A1E337CC300937FDF /* PostRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2991E337CC300937FDF /* PostRepositoryImp.swift */; };
+		4CD4E2941E337BE600937FDF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E2931E337BE600937FDF /* Post.swift */; };
 		4CD4E29D1E337D8700937FDF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E29C1E337D8700937FDF /* Network.swift */; };
-		4CD4E29F1E33822300937FDF /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4E29E1E33822300937FDF /* UseCase.swift */; };
 		93156D06D5365A9F544EE884 /* Pods_Offline_Clean_ArchitectureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860595C621729D36C53294C4 /* Pods_Offline_Clean_ArchitectureUITests.framework */; };
 		C3DA1E56AEEF60A6F8557B7B /* Pods_Offline_Clean_ArchitectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120CA7DBD43BC907F917BAFA /* Pods_Offline_Clean_ArchitectureTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,10 +52,17 @@
 		120CA7DBD43BC907F917BAFA /* Pods_Offline_Clean_ArchitectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Offline_Clean_ArchitectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D7B0351E342CA300AA6CA3 /* RealmParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmParser.swift; sourceTree = "<group>"; };
 		37D7B0371E3434D200AA6CA3 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		37D7B0391E3436F600AA6CA3 /* PostRealmImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRealmImp.swift; sourceTree = "<group>"; };
+		4C44BF3D1EF37821004B2C96 /* PostServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostServices.swift; sourceTree = "<group>"; };
+		4C44BF3F1EF3782B004B2C96 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		4C44BF431EF37867004B2C96 /* RealmPostRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmPostRepositoryImp.swift; sourceTree = "<group>"; };
+		4C44BF441EF37867004B2C96 /* Repositrory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositrory.swift; sourceTree = "<group>"; };
+		4C44BF481EF3789D004B2C96 /* NetworkPostRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPostRepositoryImp.swift; sourceTree = "<group>"; };
+		4C44BF4B1EF378BB004B2C96 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		4C44BF4E1EF378DF004B2C96 /* PostPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		4C44BF511EF37E5A004B2C96 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		4C44BF521EF37E5A004B2C96 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		4CD4E25E1E33774500937FDF /* Offline Clean Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Offline Clean Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD4E2611E33774500937FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CD4E2631E33774500937FDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CD4E2661E33774500937FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CD4E2681E33774500937FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CD4E26B1E33774500937FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,12 +73,8 @@
 		4CD4E27D1E33774500937FDF /* Offline Clean ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Offline Clean ArchitectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD4E2811E33774500937FDF /* Offline_Clean_ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offline_Clean_ArchitectureUITests.swift; sourceTree = "<group>"; };
 		4CD4E2831E33774500937FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CD4E2901E337AC400937FDF /* Repositrory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositrory.swift; sourceTree = "<group>"; };
-		4CD4E2931E337BE600937FDF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		4CD4E2971E337CA900937FDF /* PostServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostServices.swift; sourceTree = "<group>"; };
-		4CD4E2991E337CC300937FDF /* PostRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRepositoryImp.swift; sourceTree = "<group>"; };
+		4CD4E2931E337BE600937FDF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4CD4E29C1E337D8700937FDF /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		4CD4E29E1E33822300937FDF /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		5D19A681AC04CCE82F26A812 /* Pods-Offline Clean ArchitectureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline Clean ArchitectureUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offline Clean ArchitectureUITests/Pods-Offline Clean ArchitectureUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E868266FCB187159E4C0E8E /* Pods-Offline Clean Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline Clean Architecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offline Clean Architecture/Pods-Offline Clean Architecture.release.xcconfig"; sourceTree = "<group>"; };
 		7AACB4C21DE058F6EA8E7BD3 /* Pods-Offline Clean ArchitectureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offline Clean ArchitectureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offline Clean ArchitectureTests/Pods-Offline Clean ArchitectureTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +129,60 @@
 				37D7B0351E342CA300AA6CA3 /* RealmParser.swift */,
 				37D7B0371E3434D200AA6CA3 /* ErrorHandler.swift */,
 			);
-			name = Utility;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4C44BF371EF37771004B2C96 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C44BF4A1EF378A8004B2C96 /* Post */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4C44BF3C1EF377C7004B2C96 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C44BF3D1EF37821004B2C96 /* PostServices.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4C44BF411EF37847004B2C96 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C44BF481EF3789D004B2C96 /* NetworkPostRepositoryImp.swift */,
+				4C44BF431EF37867004B2C96 /* RealmPostRepositoryImp.swift */,
+				4C44BF441EF37867004B2C96 /* Repositrory.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4C44BF4A1EF378A8004B2C96 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				4C44BF501EF37E39004B2C96 /* View */,
+				4C44BF4D1EF378C3004B2C96 /* Presenter */,
+				4C44BF4B1EF378BB004B2C96 /* PostViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		4C44BF4D1EF378C3004B2C96 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4C44BF4E1EF378DF004B2C96 /* PostPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4C44BF501EF37E39004B2C96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C44BF511EF37E5A004B2C96 /* PostTableViewCell.swift */,
+				4C44BF521EF37E5A004B2C96 /* PostTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4CD4E2551E33774500937FDF = {
@@ -151,13 +210,13 @@
 		4CD4E2601E33774500937FDF /* Offline Clean Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				4C44BF371EF37771004B2C96 /* ViewControllers */,
 				37D7B0341E342C7F00AA6CA3 /* Utility */,
 				4CD4E29B1E337D6F00937FDF /* Network */,
 				4CD4E2951E337C8D00937FDF /* Service */,
-				4CD4E2921E337BD900937FDF /* Data */,
+				4CD4E2921E337BD900937FDF /* Model */,
 				4CD4E28F1E337AA800937FDF /* Repository */,
 				4CD4E2611E33774500937FDF /* AppDelegate.swift */,
-				4CD4E2631E33774500937FDF /* ViewController.swift */,
 				4CD4E2651E33774500937FDF /* Main.storyboard */,
 				4CD4E2681E33774500937FDF /* Assets.xcassets */,
 				4CD4E26A1E33774500937FDF /* LaunchScreen.storyboard */,
@@ -187,36 +246,34 @@
 		4CD4E28F1E337AA800937FDF /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				4CD4E2901E337AC400937FDF /* Repositrory.swift */,
-				4CD4E2991E337CC300937FDF /* PostRepositoryImp.swift */,
-				37D7B0391E3436F600AA6CA3 /* PostRealmImp.swift */,
+				4C44BF411EF37847004B2C96 /* Post */,
 			);
-			name = Repository;
+			path = Repository;
 			sourceTree = "<group>";
 		};
-		4CD4E2921E337BD900937FDF /* Data */ = {
+		4CD4E2921E337BD900937FDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4CD4E2931E337BE600937FDF /* Model.swift */,
+				4CD4E2931E337BE600937FDF /* Post.swift */,
 			);
-			name = Data;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4CD4E2951E337C8D00937FDF /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4CD4E2971E337CA900937FDF /* PostServices.swift */,
+				4C44BF3F1EF3782B004B2C96 /* UseCase.swift */,
+				4C44BF3C1EF377C7004B2C96 /* Post */,
 			);
-			name = Service;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		4CD4E29B1E337D6F00937FDF /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				4CD4E29C1E337D8700937FDF /* Network.swift */,
-				4CD4E29E1E33822300937FDF /* UseCase.swift */,
 			);
-			name = Network;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		EC1FFD5C7AC495C0C3E47448 /* Pods */ = {
@@ -309,7 +366,6 @@
 				TargetAttributes = {
 					4CD4E25D1E33774500937FDF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 62B4FFEPVP;
 						ProvisioningStyle = Automatic;
 					};
 					4CD4E2711E33774500937FDF = {
@@ -354,6 +410,7 @@
 				4CD4E26C1E33774500937FDF /* LaunchScreen.storyboard in Resources */,
 				4CD4E2691E33774500937FDF /* Assets.xcassets in Resources */,
 				4CD4E2671E33774500937FDF /* Main.storyboard in Resources */,
+				4C44BF541EF37E5A004B2C96 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,17 +573,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD4E2911E337AC400937FDF /* Repositrory.swift in Sources */,
-				4CD4E29F1E33822300937FDF /* UseCase.swift in Sources */,
-				4CD4E2641E33774500937FDF /* ViewController.swift in Sources */,
+				4C44BF461EF37867004B2C96 /* RealmPostRepositoryImp.swift in Sources */,
+				4C44BF3E1EF37821004B2C96 /* PostServices.swift in Sources */,
+				4C44BF531EF37E5A004B2C96 /* PostTableViewCell.swift in Sources */,
 				4CD4E29D1E337D8700937FDF /* Network.swift in Sources */,
-				4CD4E29A1E337CC300937FDF /* PostRepositoryImp.swift in Sources */,
 				4CD4E2621E33774500937FDF /* AppDelegate.swift in Sources */,
 				37D7B0361E342CA300AA6CA3 /* RealmParser.swift in Sources */,
-				4CD4E2941E337BE600937FDF /* Model.swift in Sources */,
+				4C44BF471EF37867004B2C96 /* Repositrory.swift in Sources */,
+				4CD4E2941E337BE600937FDF /* Post.swift in Sources */,
+				4C44BF401EF3782B004B2C96 /* UseCase.swift in Sources */,
+				4C44BF4F1EF378DF004B2C96 /* PostPresenter.swift in Sources */,
 				37D7B0381E3434D200AA6CA3 /* ErrorHandler.swift in Sources */,
-				4CD4E2981E337CA900937FDF /* PostServices.swift in Sources */,
-				37D7B03A1E3436F600AA6CA3 /* PostRealmImp.swift in Sources */,
+				4C44BF491EF3789D004B2C96 /* NetworkPostRepositoryImp.swift in Sources */,
+				4C44BF4C1EF378BB004B2C96 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -665,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -678,9 +737,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93EF8A5C10434BD460101AD7 /* Pods-Offline Clean Architecture.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 62B4FFEPVP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Offline Clean Architecture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sa.com.SalehAlDhobaie.Offline-Clean-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -692,9 +753,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E868266FCB187159E4C0E8E /* Pods-Offline Clean Architecture.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 62B4FFEPVP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Offline Clean Architecture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sa.com.SalehAlDhobaie.Offline-Clean-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -706,7 +769,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 909EFF5B9192A88B541CBF4B /* Pods-Offline Clean ArchitectureTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 62B4FFEPVP;
 				INFOPLIST_FILE = "Offline Clean ArchitectureTests/Info.plist";
@@ -722,7 +785,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AACB4C21DE058F6EA8E7BD3 /* Pods-Offline Clean ArchitectureTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 62B4FFEPVP;
 				INFOPLIST_FILE = "Offline Clean ArchitectureTests/Info.plist";
@@ -738,7 +801,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAAD1570466539C5E153EC67 /* Pods-Offline Clean ArchitectureUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 62B4FFEPVP;
 				INFOPLIST_FILE = "Offline Clean ArchitectureUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -753,7 +816,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D19A681AC04CCE82F26A812 /* Pods-Offline Clean ArchitectureUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 62B4FFEPVP;
 				INFOPLIST_FILE = "Offline Clean ArchitectureUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
