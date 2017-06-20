@@ -80,9 +80,9 @@ extension PostViewController : PostPresenterDelegate {
     }
     
     
-    func fetchPostSuccessfully(result: [Post], cach: Bool) {
+    func fetchPostSuccessfully(result: [Post], cache: Bool) {
         
-        if cach == true {
+        if cache == true {
             tableView.reloadData()
         }else {
             let set = IndexSet(0..<1)

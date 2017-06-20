@@ -11,7 +11,7 @@ import RxSwift
 
 public protocol PostPresenterDelegate : class {
     
-    func fetchPostSuccessfully(result: [Post], cach: Bool)
+    func fetchPostSuccessfully(result: [Post], cache: Bool)
     func fetchPostFailure(error: Error)
     
 }
@@ -48,7 +48,7 @@ public class PostPresenter {
         service.offlineAllPost().subscribe(onNext: { [weak self]  result in
             
             self?.posts = result
-            self?.delegate?.fetchPostSuccessfully(result: result, cach: true)
+            self?.delegate?.fetchPostSuccessfully(result: result, cache: true)
             self?.fetchNetwork()
             
         }, onError: { [weak self] error in
@@ -64,7 +64,7 @@ public class PostPresenter {
         service.netWorkAllPost().subscribe(onNext: { [weak self]  result in
             
             self?.posts = result
-            self?.delegate?.fetchPostSuccessfully(result: result, cach: false)
+            self?.delegate?.fetchPostSuccessfully(result: result, cache: false)
 
             
             }, onError: { [weak self] error in

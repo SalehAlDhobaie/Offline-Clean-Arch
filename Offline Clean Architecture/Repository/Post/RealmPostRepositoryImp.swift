@@ -1,5 +1,5 @@
 //
-//  PostRealmImpl.swift
+//  RealmPostRepositoryImp.swift
 //  Offline Clean Architecture
 //
 //  Created by Abdullah Alhazmy on 1/22/17.
