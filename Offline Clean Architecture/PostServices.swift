@@ -10,9 +10,9 @@ import Foundation
 import RxSwift
 import ReachabilitySwift
 
-public struct AllPostService : UseCase {
+fileprivate struct AllPostService : UseCase {
     
-    let repo : PostRepositrory
+    fileprivate let repo : PostRepositrory
     init(repo: PostRepositrory) {
         self.repo = repo
     }
@@ -26,25 +26,35 @@ public struct AllPostService : UseCase {
 
 public struct PostServiceOperations {
     
-    fileprivate var all : AllPostService
-    fileprivate var allOffline : AllPostService
-    let reachability : Reachability
+    fileprivate let all : AllPostService
+    fileprivate var allOffline : AllPostService?
+    
+    init (repo: PostRepositrory) {
+        self.all = AllPostService(repo: repo)
+        self.allOffline = nil
+    }
+    
     init(repo: PostRepositrory, offline: PostRepositrory) {
         
         self.all = AllPostService(repo: repo)
         self.allOffline = AllPostService(repo: offline)
-        
-        self.reachability = Reachability(hostname: "http://jsonplaceholder.typicode.com")!
     }
     
-    
     func allPost() -> Observable<[Post]> {
+        let empty = EmptyUseCaseRequest()
+        return all.execute(request: empty)
+    }
+    
+    func offlineAllPost() -> Observable<[Post]> {
         
         let empty = EmptyUseCaseRequest()
-        if self.reachability.isReachable == true {
-            return self.all.execute(request: empty)
+        if let offline = allOffline {
+            // not null
+            return offline.execute(request: empty)
+            
         }else {
-            return allOffline.execute(request: empty)
+            // offline is null 
+            return all.execute(request: empty)
         }
         
     }

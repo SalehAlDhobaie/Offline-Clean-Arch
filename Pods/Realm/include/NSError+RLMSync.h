@@ -20,6 +20,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// NSError category extension providing methods to get data out of Realm's
+/// "client reset" error.
 @interface NSError (RLMSync)
 
 /**
@@ -28,6 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
  error isn't a client reset error.
  */
 - (nullable void(^)(void))rlmSync_clientResetBlock NS_REFINED_FOR_SWIFT;
+
+/**
+ Given a Realm Object Server permission denied error, return the block that
+ can be called to manually initiate the Realm file deletion process, or nil
+ if the error isn't a permission denied error.
+ */
+- (nullable void(^)(void))rlmSync_deleteRealmBlock NS_REFINED_FOR_SWIFT;
 
 /**
  Given a Realm Object Server client reset error, return the path where the

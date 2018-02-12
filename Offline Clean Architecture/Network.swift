@@ -10,11 +10,15 @@ import Foundation
 import Moya
 import RxSwift
 
-enum Network {
+public enum NetworkPath : String {
+    case posts = "/posts"
+    case commments = "/commens"
+}
+
+public enum Network {
     
     case posts
-    case commments
-    
+    case comments
 }
 
 extension Network : TargetType {
@@ -30,9 +34,9 @@ extension Network : TargetType {
         
         switch self {
         case .posts:
-            return "/posts"
+            return NetworkPath.posts
         case .commments:
-            return "/commens"
+            return NetworkPath.comments
         }
     }
     
