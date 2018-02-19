@@ -17,7 +17,6 @@ fileprivate struct AllPostService : UseCase {
         self.repo = repo
     }
     
-    
     public func execute(request: UseCaseRequest) -> Observable<[Post]> {
         return repo.allPosts()
     }

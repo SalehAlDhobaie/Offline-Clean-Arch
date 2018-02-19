@@ -37,8 +37,9 @@ public class PostPresenter {
             print("\n\n\n\n\n\n\n\n\n \(#function), \(#line) value: \(posts.count)")
 
             self.delegate?.onSuccess(result: posts)
-        }, onError: { (error) in
-            
+        }, onError: { error in
+            // stop loading
+            // stop operation
             self.delegate?.onFailure(result: error)
             
         }, onCompleted: nil, onDisposed: nil).addDisposableTo(disposableBag)

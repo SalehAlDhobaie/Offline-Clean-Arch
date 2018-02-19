@@ -19,5 +19,5 @@ public struct EmptyUseCaseRequest : UseCaseRequest {
 
 public protocol UseCase {
     associatedtype Element
-    func execute(request: UseCaseRequest) -> Element
+    func execute(request: UseCaseRequest ) -> Element
 }

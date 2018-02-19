@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import Moya
 
-struct NetworkPostRepositoryImp : PostRepositrory {
+public struct NetworkPostRepositoryImp : PostRepositrory {
     
     func allPosts() -> Observable<[Post]> {
         
